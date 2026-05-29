@@ -8,7 +8,7 @@ const getBaseURL = () => {
     if (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
       url = 'http://localhost:5000/api';
     } else {
-      url = 'https://backend-i4iy.vercel.app/api';
+      url = 'https://mediid-backend-up9j.vercel.app/api';
     }
   }
   
@@ -252,4 +252,4 @@ export const pharmacyPortalAPI = {
   dispensePrescription: (data) => api.post('/pharmacy-portal/dispense', data)
 };
 
-export default api;
+export default api;
